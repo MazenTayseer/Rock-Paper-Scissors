@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit',sans-serif;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+.container {
+    margin: 40px auto;
+    padding: 30px;
+    width: 1200px;
+    height: 800px;
+    border-radius: 20px;
+    background: black;
+    border: 5px solid white;
+    box-shadow: 0px 0px 20px white;
+}
+
+.container h1 {
+    font-size: 44px;
+}
+
+.container h2{
+    color: red;
+    margin-top: 30px;
+    margin-bottom: -15px;
+    font-size: 36px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: 30px auto;
+}
+
+.btns .in-btns {
+    margin: 20px 40px;
+    padding: 70px 90px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border: 5px solid white;
+    box-shadow: 0px 0px 5px white;
+}
+
+.btns .in-btns:hover, #Reset:hover {
+    cursor: pointer;
+    color: red;
+    border-color: red;
+    box-shadow: 0px 0px 5px red;
+    transition: ease-in-out 0.3s;
+
+    transform: scale(1.2);
+}
+
+.btns .in-btns:active, #Reset:hover {
+    background-color: red;
+    color: black;
+    border-color: black;
+    box-shadow: 0px 0px 5px black;
+    transition: none;
+}
+
+.result {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 110px;
+}
+
+.result #player-res {
+    margin-right: 230px;
+}
+
+.result #computer-res {
+    position: relative;
+    right: 2px;
+}
+
+
+.container .result .computer, .container .result .player {
+    font-size: 30px;
+    margin: 15px 140px;
+    text-align: left;
+}
+
+.container .result #player-res, .container .result #computer-res {
+    margin-top: -10px;
+    color: red;
+    text-align: center;
+}
+
+hr {
+    width: 500px;
+    margin: 20px auto;
+    border: 2px solid red;
+    box-shadow: 0px 0px 6px red;
+}
+
+#final-result {
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+.scores {
+    display: flex;
+    max-width: 100%;
+    margin: 10px auto;
+    justify-content: space-between;
+}
+
+#Human-Score, #Computer-Score, #Reset {
+    border: 2px solid red;
+    width: 270px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 24px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px red;
+}
+
+#Reset {
+    border: 5px solid white;
+    box-shadow: 0px 0px 5px white;
+}
+
+
